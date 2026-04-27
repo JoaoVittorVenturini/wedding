@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nosso Casamento</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#home">Início</a>
+    <a href="#sobre">Nossa História</a>
+    <a href="#cerimonia">Cerimônia</a>
+    <a href="#presentes">Presentes</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-overlay">
+    <h1>João & Norena</h1>
+    <p>06 de Junho de 2026</p>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="section">
+  <div class="container three-columns">
+
+    <div>
+      <h2>Nosso Romance</h2>
+    </div>
+
+    <div>
+      <img src="./assets/casal.jpg" alt="Casal" />
+    </div>
+
+    <div>
+      <p>
+        Nossa história começou de forma simples e, com o tempo, se tornou algo especial e verdadeiro.
+        Construímos uma relação baseada em respeito, apoio e escolhas diárias.
+        <br><br>
+        Mais do que celebrar, este dia representa tudo o que já vivemos e a certeza de que somos melhores juntos.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CERIMONIA -->
+<section id="cerimonia" class="section ceremony">
+  <div class="container">
+    <h2>A CERIMÔNIA</h2>
+    <p class="date">06 de junho de 2026, às 16h30</p>
+
+    <div class="ceremony-grid">
+
+      <div>
+        <h3>Local</h3>
+        <p>
+          Espaço Villa di Cora Garden<br>
+          Rodovia Mabio Gonzales Palhano<br>
+          Londrina - PR
+        </p>
+      </div>
+
+      <div>
+        <h3>Traje</h3>
+        <p>
+          Esporte fino. Vestidos ou camisa polo são ótimas opções.
+        </p>
+      </div>
+
+      <div>
+        <h3>Pós-cerimônia</h3>
+        <p>
+          Teremos jantar de celebração no local.
+        </p>
+      </div>
+
+    </div>
+
+    <div id="countdown" class="countdown">
+      <div class="time-box">
+        <span id="days">00</span>
+        <small>DIAS</small>
+      </div>
+      <div class="time-box">
+        <span id="hours">00</span>
+        <small>HORAS</small>
+      </div>
+      <div class="time-box">
+        <span id="minutes">00</span>
+        <small>MIN</small>
+      </div>
+      <div class="time-box">
+        <span id="seconds">00</span>
+        <small>SEC</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRESENTES -->
+<section id="presentes" class="section">
+  <div class="container">
+    <h2>Lista de Presentes</h2>
+    <div id="gift-list" class="grid"></div>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="hidden">
+  <div class="modal-box">
+
+    <canvas id="qrcode"></canvas>
+
+    <div id="pix-text"></div>
+
+    <button onclick="closeModal()" style="margin-top:15px;">
+      Fechar
+    </button>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>Com amor, João & Norena</p>
+  <p>© 2026</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

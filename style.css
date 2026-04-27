@@ -1,0 +1,336 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #fff; 
+  margin: 0;
+  color: #222;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+h1, h2 {
+  font-family: "Georgia", serif;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.section {
+  padding: 100px 20px;
+}
+
+.container {
+  max-width: 80vw;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(6px);
+  padding: 15px 0;
+  z-index: 1000;
+  border-bottom: 1px solid #eee;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #222;
+  font-size: 14px;
+  transition: 0.2s;
+  position: relative;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -4px;
+  left: 0;
+  background: #111;
+  transition: 0.3s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('./assets/hero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  text-align: center;
+  color: white;
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(2px);
+  padding: 100px 150px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* HISTORIA */
+.three-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.three-columns > div {
+  min-width: 0;
+}
+
+.three-columns img {
+  width: 100%;
+  max-width: 320px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* CERIMÔNIA */
+.ceremony {
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.ceremony-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* COUNTDOWN */
+.countdown {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.time-box {
+  background: #111;
+  color: white;
+  width: 110px;
+  height: 120px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.time-box span {
+  font-size: 42px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.time-box small {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #bbb;
+  letter-spacing: 1px;
+}
+
+/* linha no meio estilo flip */
+.time-box::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: rgba(255,255,255,0.15);
+  top: 50%;
+  left: 0;
+}
+
+/* PRESENTES */
+#gift-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  padding: 12px;
+  transition: 0.25s;
+  border: 1px solid #eee;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.card.soldout {
+  opacity: 0.6;
+}
+
+.card img {
+  width: 100%;
+  height: 225px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 10px 0 5px;
+}
+
+.card p {
+  margin: 0;
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+button {
+  margin-top: 12px;
+  padding: 10px;
+  border: none;
+  background: #111;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+button:disabled {
+  background: #e5e5e5;
+  color: #999;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+/* MODAL */
+#modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.modal-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 320px;
+  max-width: 90%;
+}
+
+.pix-section {
+  margin-top: 10px;
+}
+
+.gift-name {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.divider {
+  margin: 20px 0 10px;
+  font-size: 12px;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.buy-link {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #1d6e94;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.buy-link:hover {
+  background: #333;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 50px 20px;
+  background: #111;
+  color: #fff;
+  font-size: 14px;
+}
