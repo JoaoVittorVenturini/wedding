@@ -297,6 +297,24 @@ button:disabled {
   margin-top: 10px;
 }
 
+#pix-copy {
+  width: 80%;
+  margin-top: 12px;
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  resize: none;
+  height: 10px;
+  background: #f9f9f9;
+}
+
+.copy-btn {
+  width: 100%;
+  margin-top: 10px;
+  background: #3769f1;
+}
+
 .gift-name {
   font-size: 14px;
   color: #666;
@@ -314,7 +332,7 @@ button:disabled {
 .buy-link {
   display: inline-block;
   padding: 10px 16px;
-  background: #1d6e94;
+  background: #16a150;
   color: #fff;
   text-decoration: none;
   border-radius: 8px;

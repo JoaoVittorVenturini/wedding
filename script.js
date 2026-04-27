@@ -350,6 +350,21 @@ function generatePixPayload(value, description) {
   return payloadFinal + checksum
 }
 
+function copyPix() {
+  const textarea = document.getElementById("pix-copy")
+  textarea.select()
+  textarea.setSelectionRange(0, 99999)
+
+  navigator.clipboard.writeText(textarea.value)
+
+  const btn = document.querySelector(".copy-btn")
+  btn.innerText = "Copiado ✓"
+
+  setTimeout(() => {
+    btn.innerText = "Copiar código PIX"
+  }, 2000)
+}
+
 // MODAL
 function openModal(gift) {
   const modal = document.getElementById("modal")
@@ -367,10 +382,16 @@ function openModal(gift) {
       <strong class="price">${formatCurrency(gift.price)}</strong>
       <p class="gift-name">${gift.name}</p>
     </div>
+
+    <textarea id="pix-copy" readonly>${payload}</textarea>
+
+    <button class="copy-btn" onclick="copyPix()">
+      Copiar código PIX
+    </button>
   `
 
   // Se tiver link, adiciona alternativa
-  if (gift.link && gift.link != "") {
+  if (gift.link && gift.link !== "") {
     pixText.innerHTML += `
       <div class="divider">ou</div>
 
