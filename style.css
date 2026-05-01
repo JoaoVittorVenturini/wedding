@@ -1,16 +1,17 @@
+/* RESET BASE */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #fff; 
+  background: #fff;
   margin: 0;
   color: #222;
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-section {
-  scroll-margin-top: 80px;
 }
 
 h1, h2 {
@@ -21,30 +22,25 @@ p {
   line-height: 1.6;
 }
 
+/* LAYOUT */
 .section {
-  padding: 100px 20px;
+  padding: 60px 16px;
 }
 
 .container {
-  max-width: 80vw;
+  width: 100%;
+  max-width: 1400px;
   margin: auto;
 }
 
-h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 28px;
-  font-weight: 500;
-}
-
-/* Navbar */
+/* NAVBAR */
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.9);
   backdrop-filter: blur(6px);
-  padding: 15px 0;
+  padding: 12px 0;
   z-index: 1000;
   border-bottom: 1px solid #eee;
 }
@@ -52,30 +48,14 @@ h2 {
 .nav-container {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .navbar a {
   text-decoration: none;
   color: #222;
-  font-size: 14px;
-  transition: 0.2s;
-  position: relative;
-}
-
-.navbar a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 1px;
-  bottom: -4px;
-  left: 0;
-  background: #111;
-  transition: 0.3s;
-}
-
-.navbar a:hover::after {
-  width: 100%;
+  font-size: 13px;
 }
 
 /* HERO */
@@ -90,45 +70,28 @@ h2 {
 .hero-overlay {
   text-align: center;
   color: white;
-  background: rgba(255,255,255,0.25);
-  backdrop-filter: blur(2px);
-  padding: 100px 150px;
+  background: rgba(0,0,0,0.35);
+  padding: 30px 20px;
   border-radius: 10px;
 }
 
 .hero h1 {
-  font-size: 52px;
-  font-weight: 500;
-  letter-spacing: 1px;
+  font-size: 28px;
 }
 
-/* HISTORIA */
+/* HISTÓRIA */
 .three-columns {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
-  align-items: center;
-}
-
-.three-columns > div {
-  min-width: 0;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  text-align: center;
 }
 
 .three-columns img {
   width: 100%;
-  max-width: 320px;
-  height: 400px;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
+  max-width: 260px;
+  margin: auto;
   border-radius: 12px;
-}
-
-.about-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
 }
 
 /* CERIMÔNIA */
@@ -139,9 +102,9 @@ h2 {
 
 .ceremony-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  margin-top: 40px;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  margin-top: 30px;
 }
 
 /* COUNTDOWN */
@@ -149,15 +112,16 @@ h2 {
   margin-top: 40px;
   display: flex;
   justify-content: center;
-  gap: 15px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .time-box {
   background: #111;
   color: white;
-  width: 110px;
-  height: 120px;
-  border-radius: 12px;
+  width: 70px;
+  height: 80px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,19 +130,15 @@ h2 {
 }
 
 .time-box span {
-  font-size: 42px;
+  font-size: 24px;
   font-weight: bold;
-  letter-spacing: 2px;
 }
 
 .time-box small {
-  margin-top: 8px;
-  font-size: 12px;
+  font-size: 10px;
   color: #bbb;
-  letter-spacing: 1px;
 }
 
-/* linha no meio estilo flip */
 .time-box::after {
   content: "";
   position: absolute;
@@ -186,88 +146,48 @@ h2 {
   height: 1px;
   background: rgba(255,255,255,0.15);
   top: 50%;
-  left: 0;
 }
 
 /* PRESENTES */
 #gift-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 25px;
+  grid-template-columns: 1fr;
+  gap: 16px;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
   background: #fff;
-  border-radius: 14px;
-  overflow: hidden;
+  border-radius: 12px;
   padding: 12px;
-  transition: 0.25s;
   border: 1px solid #eee;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-}
-
-.card.soldout {
-  opacity: 0.6;
+  transition: 0.2s;
 }
 
 .card img {
   width: 100%;
-  height: 225px;
-  border-radius: 12px;
+  min-height: 200px;
+  height: 200px;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .card h3 {
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 14px;
   margin: 10px 0 5px;
-}
-
-.card p {
-  margin: 0;
-}
-
-.subtitle {
-  color: #777;
-  margin-bottom: 30px;
 }
 
 .price {
   font-weight: bold;
-  font-size: 18px;
-  display: block;
-  margin-bottom: 5px;
+  font-size: 16px;
 }
 
 button {
-  margin-top: 12px;
+  margin-top: 10px;
   padding: 10px;
-  border: none;
   background: #111;
-  font-size: 12px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
   color: white;
-  cursor: pointer;
-  border-radius: 8px;
-}
-
-button:hover {
-  opacity: 0.85;
-}
-
-button:disabled {
-  background: #e5e5e5;
-  color: #999;
-  cursor: not-allowed;
-  opacity: 0.8;
+  border: none;
+  border-radius: 6px;
 }
 
 /* MODAL */
@@ -288,67 +208,94 @@ button:disabled {
   background: white;
   padding: 20px;
   border-radius: 10px;
-  text-align: center;
-  width: 320px;
-  max-width: 90%;
-}
-
-.pix-section {
-  margin-top: 10px;
+  width: 90%;
+  max-width: 320px;
 }
 
 #pix-copy {
-  width: 80%;
-  margin-top: 12px;
-  padding: 10px;
-  font-size: 12px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  resize: none;
-  height: 10px;
-  background: #f9f9f9;
-}
-
-.copy-btn {
   width: 100%;
   margin-top: 10px;
-  background: #3769f1;
-}
-
-.gift-name {
-  font-size: 14px;
-  color: #666;
-  margin: 0;
-}
-
-.divider {
-  margin: 20px 0 10px;
+  padding: 10px;
   font-size: 12px;
-  color: #999;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.buy-link {
-  display: inline-block;
-  padding: 10px 16px;
-  background: #16a150;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 14px;
-  transition: 0.2s;
-}
-
-.buy-link:hover {
-  background: #333;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  height: 60px;
 }
 
 /* FOOTER */
 .footer {
   text-align: center;
-  padding: 50px 20px;
+  padding: 40px 20px;
   background: #111;
   color: #fff;
-  font-size: 14px;
+}
+
+/* ========================= */
+/* TABLET (≥ 768px) */
+/* ========================= */
+@media (min-width: 768px) {
+
+  .section {
+    padding: 80px 20px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .three-columns {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .ceremony-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #gift-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .time-box {
+    width: 90px;
+    height: 100px;
+  }
+
+  .time-box span {
+    font-size: 30px;
+  }
+}
+
+/* ========================= */
+/* DESKTOP (≥ 1024px) */
+/* ========================= */
+@media (min-width: 1024px) {
+
+  .three-columns {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .ceremony-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #gift-list {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+
+  .hero h1 {
+    font-size: 52px;
+  }
+
+  .hero-overlay {
+    padding: 80px 120px;
+  }
+
+  .time-box {
+    width: 110px;
+    height: 120px;
+  }
+
+  .time-box span {
+    font-size: 42px;
+  }
 }
