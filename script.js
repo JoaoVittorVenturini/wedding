@@ -130,6 +130,15 @@ const gifts = [
     "link": ""
   },
   {
+    "id": 26,
+    "name": "Rolo de macarrão para momentos necessários",
+    "price": 100.26,
+    "image": "./gifts/rolo.jpg",
+    "max": 1,
+    "bought": 0,
+    "link": ""
+  },
+  {
     "id": 15,
     "name": "Capacete contra rolo de macarrão",
     "price": 285.15,
@@ -228,15 +237,7 @@ const gifts = [
     "bought": 0,
     "link": ""
   },
-  {
-    "id": 26,
-    "name": "Rolo de macarrão para momentos necessários",
-    "price": 100.26,
-    "image": "./gifts/rolo.jpg",
-    "max": 1,
-    "bought": 0,
-    "link": ""
-  },
+  
   {
     "id": 27,
     "name": "O que Deus tocar no seu coração",
