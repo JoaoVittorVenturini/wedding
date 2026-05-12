@@ -225,7 +225,7 @@ const gifts = [
     "price": 149.24,
     "image": "./gifts/cueca.jpg",
     "max": 4,
-    "bought": 0,
+    "bought": 1,
     "link": ""
   },
   {
