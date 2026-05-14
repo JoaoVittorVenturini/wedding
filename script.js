@@ -18,7 +18,7 @@ const gifts = [
     "price": 1125.02,
     "image": "./gifts/colchao-emma.jpg",
     "max": 3,
-    "bought": 0,
+    "bought": 3,
     "link": "https://www.mercadolivre.com.br/emma-original-classic-brancocinza-king-203-cm-193-cm-25-cm/p/MLB15810522?product_trigger_id=MLB17351734&picker=true&quantity=1"
   },
   {
