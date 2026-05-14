@@ -54,7 +54,7 @@ const gifts = [
     "price": 550.06,
     "image": "./gifts/aparelho-jantar.jpg",
     "max": 1,
-    "bought": 0,
+    "bought": 1,
     "link": "https://www.mercadolivre.com.br/oxford-ryo-maresia-branco-liso-30/p/MLB34115624?product_trigger_id=MLB64883205&picker=true&quantity=1"
   },
   {
