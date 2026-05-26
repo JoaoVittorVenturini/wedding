@@ -126,7 +126,7 @@ const gifts = [
     "price": 300.14,
     "image": "./gifts/planejados.jpg",
     "max": 8,
-    "bought": 0,
+    "bought": 1,
     "link": ""
   },
   {
