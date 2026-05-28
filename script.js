@@ -397,7 +397,7 @@ function openModal(gift) {
       <div class="divider">ou</div>
 
       <a href="${gift.link}" target="_blank" class="buy-link">
-        Comprar diretamente
+        🛒 Comprar diretamente
       </a>
     `
   }

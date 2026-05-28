@@ -222,6 +222,38 @@ button {
   height: 60px;
 }
 
+.buy-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px 16px;
+
+  border-radius: 10px;
+  border: none;
+
+  background: #118a43;
+  color: #fff;
+
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+
+  transition: 0.25s ease;
+}
+
+.buy-link:hover {
+  background: #128743;
+  transform: translateY(-2px);
+}
+
+.buy-link:active {
+  transform: scale(0.98);
+}
+
 /* FOOTER */
 .footer {
   text-align: center;
