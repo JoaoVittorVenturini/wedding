@@ -15,10 +15,10 @@ const gifts = [
   {
     "id": 2,
     "name": "Cota do Colchão King Emma",
-    "price": 1125.02,
+    "price": 3500.02,
     "image": "./gifts/colchao-emma.jpg",
-    "max": 3,
-    "bought": 3,
+    "max": 1,
+    "bought": 1,
     "link": "https://www.mercadolivre.com.br/emma-original-classic-brancocinza-king-203-cm-193-cm-25-cm/p/MLB15810522?product_trigger_id=MLB17351734&picker=true&quantity=1"
   },
   {
@@ -32,216 +32,269 @@ const gifts = [
   },
   {
     "id": 4,
+    "name": "Cama Box Baú Bi-partida King (Cinza)",
+    "price": 1050.04,
+    "image": "./gifts/box-colchao.jpg",
+    "max": 1,
+    "bought": 0,
+    "link": "https://www.mercadolivre.com.br/bau-gaveta-200cm-e-cabeceira-king-de-200x117cm-de-altura/up/MLBU3339134541"
+  },
+  {
+    "id": 5,
+    "name": "Cadeira Ergonômica Elements Samaia - Preto",
+    "price": 860.05,
+    "image": "./gifts/cadeira.jpg",
+    "max": 1,
+    "bought": 0,
+    "link": "https://www.mercadolivre.com.br/cadeira-escritorio-confortavel-ergonmica-elements-samaia-nr17-preto/p/MLB61348952"
+  },
+  {
+    "id": 6,
     "name": "Echo Show 5",
-    "price": 700.04,
+    "price": 700.06,
     "image": "./gifts/echo-show-5.jpg",
     "max": 1,
     "bought": 0,
     "link": "https://www.amazon.com.br/Echo-Show-5-3%C2%AAgera%C3%A7%C3%A3o-Cor-Preta/dp/B09B2TSNNN"
   },
   {
-    "id": 5,
+    "id": 7,
     "name": "Amigos para sempre",
-    "price": 750.05,
+    "price": 750.07,
     "image": "./gifts/amigos-para-sempre.png",
     "max": 2,
     "bought": 0,
     "link": ""
   },
   {
-    "id": 6,
+    "id": 8,
+    "name": "Panela De Pressão Elétrica",
+    "price": 549.08,
+    "image": "./gifts/panela-de-pressao.jpg",
+    "max": 1,
+    "bought": 0,
+    "link": "https://www.havan.com.br/panela-de-pressao-eletrica-electrolux-6-litros-pcc20/p"
+  },
+  {
+    "id": 9,
     "name": "Aparelho de Jantar 30 peças",
-    "price": 550.06,
+    "price": 550.9,
     "image": "./gifts/aparelho-jantar.jpg",
     "max": 1,
     "bought": 1,
     "link": "https://www.mercadolivre.com.br/oxford-ryo-maresia-branco-liso-30/p/MLB34115624?product_trigger_id=MLB64883205&picker=true&quantity=1"
   },
   {
-    "id": 7,
-    "name": "Cota Lua de Mel em Bariloche",
-    "price": 550.07,
-    "image": "./gifts/bariloche.jpg",
-    "max": 10,
-    "bought": 0,
-    "link": ""
-  },
-  {
-    "id": 8,
+    "id": 10,
     "name": "Cota do Forno e Fritadeira Oster",
-    "price": 350.08,
+    "price": 890.1,
     "image": "./gifts/forno-eletrico.jpg",
-    "max": 3,
+    "max": 1,
     "bought": 0,
     "link": "https://www.mercadolivre.com.br/forno-e-fritadeira-sem-oleo-oster-42l-french-door-2-em-1-cor-prateado-tssttvfdmaf/p/MLB22477586"
   },
   {
-    "id": 9,
+    "id": 11,
     "name": "Cota da TV 55' QLED",
-    "price": 500.09,
+    "price": 500.11,
     "image": "./gifts/tv.jpg",
     "max": 6,
     "bought": 0,
     "link": "https://www.mercadolivre.com.br/samsung-vision-ai-tv-55-qled-ultra-4k-qef1-2025/p/MLB48957045"
   },
   {
-    "id": 10,
+    "id": 12,
     "name": "Jogo de Panelas",
-    "price": 425.10,
+    "price": 525.12,
     "image": "./gifts/jogo-panelas.jpg",
     "max": 1,
     "bought": 0,
-    "link": "https://www.mercadolivre.com.br/jogo-de-panelas-antiaderente-com-15-pecas-em-aluminio-resistente-cabo-removivel-para-facil-armazenamentocomp-preto-ativel-com-fogo-a-gas-e-eletricoideal-para-uso-diariocozinha-pratica-preto/p/MLB63670413"
+    "link": "https://produto.mercadolivre.com.br/MLB-4669346839-jogo-panelas-antiaderente-15-pecas-cabo-removivel-_JM"
   },
   {
-    "id": 11,
+    "id": 13,
     "name": "Vaquinha para ajudar os noivos quebrados",
-    "price": 400.11,
+    "price": 400.13,
     "image": "./gifts/porquinho.jpeg",
     "max": 8,
     "bought": 0,
     "link": ""
   },
   {
-    "id": 12,
+    "id": 14,
+    "name": "Livreiro Estante",
+    "price": 350.14,
+    "image": "./gifts/estante.jpg",
+    "max": 1,
+    "bought": 0,
+    "link": "https://produto.mercadolivre.com.br/MLB-3403240967-livreiro-estante-4-prateleiras-cpes-em-mdf-versales-_JM?attributes=COLOR_SECONDARY_COLOR%3AUHJldG8%3D&picker=true&quantity=1"
+  },
+  {
+    "id": 15,
     "name": "Primeira compra no mercado dos noivos",
-    "price": 325.12,
+    "price": 325.15,
     "image": "./gifts/mercado.jpg",
     "max": 1,
     "bought": 0,
     "link": ""
   },
   {
-    "id": 13,
+    "id": 16,
     "name": "Academia dos noivos",
-    "price": 300.13,
+    "price": 300.16,
     "image": "./gifts/academia.jpg",
     "max": 4,
     "bought": 0,
     "link": ""
   },
   {
-    "id": 14,
+    "id": 17,
     "name": "Cota dos Móveis Planejados",
-    "price": 300.14,
+    "price": 300.17,
     "image": "./gifts/planejados.jpg",
     "max": 8,
     "bought": 1,
     "link": ""
   },
   {
-    "id": 26,
+    "id": 18,
     "name": "Rolo de macarrão para momentos necessários",
-    "price": 100.26,
+    "price": 100.18,
     "image": "./gifts/rolo.jpg",
     "max": 1,
     "bought": 0,
     "link": ""
   },
   {
-    "id": 15,
+    "id": 19,
     "name": "Capacete contra rolo de macarrão",
-    "price": 285.15,
+    "price": 285.19,
     "image": "./gifts/capacete.jpg",
     "max": 1,
     "bought": 0,
     "link": ""
   },
   {
-    "id": 16,
+    "id": 20,
     "name": "Decoração da casa",
-    "price": 275.16,
+    "price": 275.2,
     "image": "./gifts/decoracoes.jpg",
     "max": 6,
     "bought": 0,
     "link": ""
   },
   {
-    "id": 17,
-    "name": "Colcha King size",
-    "price": 250.17,
+    "id": 21,
+    "name": "Kit Facas 14 peças Inox",
+    "price": 270.21,
+    "image": "./gifts/faqueiro.jpg",
+    "max": 1,
+    "bought": 0,
+    "link": "https://shopee.com.br/Kit-Facas-de-luxo-14-pe%C3%A7as-Inox-Bloco-de-Bancada-Elegante-com-Afiador-Embutido-i.811757439.18999616108"
+  },
+  {
+    "id": 22,
+    "name": "Armário Multiuso",
+    "price": 250.22,
+    "image": "./gifts/armario-lavanderia.jpg",
+    "max": 1,
+    "bought": 0,
+    "link": "https://shopee.com.br/Arm%C3%A1rio-Multiuso-Dit%C3%A1lia-2-Portas-com-Rod%C3%ADzios-AR-70-Preto-i.522316174.21465912041?xptdk=0487a06e-c523-4aca-b845-fd542d1d2cc2"
+  },
+  {
+    "id": 23,
+    "name": "Cobre Leito King",
+    "price": 300.23,
     "image": "./gifts/colcha.jpg",
     "max": 2,
     "bought": 0,
-    "link": ""
+    "link": "https://produto.mercadolivre.com.br/MLB-4055099773-conjunto-casal-king-size-melinda-algodo-toque-super-macio-_JM?attributes=COLOR_SECONDARY_COLOR%3AQ2luemE%3D&picker=true&quantity=1"
   },
   {
-    "id": 18,
+    "id": 24,
     "name": "Makita pra cortar a unha do noivo",
-    "price": 225.18,
+    "price": 225.24,
     "image": "./gifts/makita.jpg",
     "max": 1,
     "bought": 0,
     "link": ""
   },
   {
-    "id": 19,
+    "id": 25,
     "name": "Primeira conta de luz do casal (ajuda psicológica inclusa)",
-    "price": 200.19,
+    "price": 200.25,
     "image": "./gifts/boletos.jpg",
     "max": 2,
     "bought": 0,
     "link": ""
   },
   {
-    "id": 20,
+    "id": 26,
     "name": "Curso de gastronomia para a noiva",
-    "price": 180.20,
+    "price": 180.26,
     "image": "./gifts/gastronomia.jpg",
     "max": 2,
     "bought": 0,
     "link": ""
   },
   {
-    "id": 21,
+    "id": 27,
     "name": "Jantar romântico dos noivos",
-    "price": 200.21,
+    "price": 200.27,
     "image": "./gifts/jantar.jpg",
     "max": 8,
     "bought": 0,
     "link": ""
   },
   {
-    "id": 22,
+    "id": 28,
     "name": "Café da manhã especial dos noivos",
-    "price": 165.22,
+    "price": 165.28,
     "image": "./gifts/cafe.jpg",
     "max": 4,
     "bought": 0,
     "link": ""
   },
   {
-    "id": 23,
+    "id": 29,
     "name": "Pizza da sexta-feira sagrada",
-    "price": 150.23,
+    "price": 150.29,
     "image": "./gifts/pizza.jpg",
     "max": 4,
     "bought": 0,
     "link": ""
   },
   {
-    "id": 24,
+    "id": 30,
     "name": "Cueca sensual para o noivo usar na noite de núpcias",
-    "price": 149.24,
+    "price": 149.3,
     "image": "./gifts/cueca.jpg",
     "max": 4,
     "bought": 1,
     "link": ""
   },
   {
-    "id": 25,
+    "id": 31,
+    "name": "Potes Herméticos Vidro Tampa Bambu",
+    "price": 135.31,
+    "image": "./gifts/potes.jpg",
+    "max": 1,
+    "bought": 0,
+    "link": "https://www.mercadolivre.com.br/kit-10-potes-hermeticos-vidro-tampa-bambu-seiri-para-mantimentos-cozinha/p/MLB57492845"
+  },
+  {
+    "id": 32,
     "name": "Máscara de gás para futuras fraldas",
-    "price": 125.25,
+    "price": 125.32,
     "image": "./gifts/mascara.jpg",
     "max": 1,
     "bought": 0,
     "link": ""
   },
-  
   {
-    "id": 27,
+    "id": 33,
     "name": "O que Deus tocar no seu coração",
-    "price": 0,
+    "price": "R$ -",
     "image": "./gifts/oque-tocar-no-coracao.jpg",
     "max": 10,
     "bought": 0,
