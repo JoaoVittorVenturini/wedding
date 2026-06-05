@@ -135,7 +135,7 @@ const gifts = [
     "price": 325.15,
     "image": "./gifts/mercado.jpg",
     "max": 1,
-    "bought": 0,
+    "bought": 1,
     "link": ""
   },
   {
