@@ -45,7 +45,7 @@ const gifts = [
     "price": 860.05,
     "image": "./gifts/cadeira.jpg",
     "max": 1,
-    "bought": 0,
+    "bought": 1,
     "link": "https://www.mercadolivre.com.br/cadeira-escritorio-confortavel-ergonmica-elements-samaia-nr17-preto/p/MLB61348952"
   },
   {
@@ -198,7 +198,7 @@ const gifts = [
     "price": 250.22,
     "image": "./gifts/armario-lavanderia.jpg",
     "max": 1,
-    "bought": 0,
+    "bought": 1,
     "link": "https://shopee.com.br/Arm%C3%A1rio-Multiuso-Dit%C3%A1lia-2-Portas-com-Rod%C3%ADzios-AR-70-Preto-i.522316174.21465912041?xptdk=0487a06e-c523-4aca-b845-fd542d1d2cc2"
   },
   {
