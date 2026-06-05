@@ -36,7 +36,7 @@ const gifts = [
     "price": 1050.04,
     "image": "./gifts/box-colchao.jpg",
     "max": 1,
-    "bought": 0,
+    "bought": 1,
     "link": "https://www.mercadolivre.com.br/bau-gaveta-200cm-e-cabeceira-king-de-200x117cm-de-altura/up/MLBU3339134541"
   },
   {
