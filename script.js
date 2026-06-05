@@ -72,7 +72,7 @@ const gifts = [
     "price": 549.08,
     "image": "./gifts/panela-de-pressao.jpg",
     "max": 1,
-    "bought": 0,
+    "bought": 1,
     "link": "https://www.havan.com.br/panela-de-pressao-eletrica-electrolux-6-litros-pcc20/p"
   },
   {
