@@ -216,7 +216,7 @@ const gifts = [
     "price": 225.24,
     "image": "./gifts/makita.jpg",
     "max": 1,
-    "bought": 0,
+    "bought": 1,
     "link": ""
   },
   {
